@@ -1,87 +1,40 @@
-# Yavanna
+# Rohan - O Amigo do Motorista
 
-Yavanna é um monorepo com o nome inspirado na obra 'O Senhor dos Anéis', abrigando dois projetos de aplicação web voltados para relacionamentos. Laurelin, a 'árvore dourada', utiliza inteligência artificial para auxiliar os usuários na busca pelo par ideal. Por outro lado, Telperion direciona seu foco para a criação de conexões entre um grupo específico de influenciadores digitais. Ambos os projetos, construídos com Next.js e TypeScript, adotam o design system @nextime-ui e o projeto yavanna-ui ambos baseados no Chakra UI para uma estilização consistente e atraente.
+![Logo do Rohan](url-da-imagem-do-logo-aqui)
 
-Projeto responsável por cultivar e dar vida a dois aplicativos distintos. Assim como a divindade dos Valar, Yavanna, que reina sobre a terra, a flora e a fauna, e deu vida às Duas Árvores de Valinor, nosso projeto é a fonte que permite que nossos aplicativos cresçam e prosperem. Unidos sob uma única entidade, almejamos fornecer ferramentas poderosas e integradas para melhor servir às necessidades das pessoas.
+## Sobre
 
-# Turborepo starter
+"Rohan" é o seu novo companheiro nas estradas. Inspirado na vasta e mágica terra de Rohan do universo de Tolkien, este aplicativo foi projetado para ser o guardião e amigo fiel de todos os motoristas. Projetado para o motorista moderno, ele oferece recursos avançados que ajudam a garantir uma condução segura, eficiente e agradável.
 
-This is an official starter Turborepo.
+## Características
 
-## Using this example
+- **Navegação Inteligente:** Seja guiado pelo melhor caminho com atualizações em tempo real.
+- **Suporte ao Motorista:** Dicas, lembretes e informações úteis para a sua jornada.
+- **Segurança em Primeiro Lugar:** Alertas e notificações para garantir que sua viagem seja tão segura quanto possível.
 
-Run the following command:
+## Por que "Rohan"?
 
-```sh
-npx create-turbo@latest
-```
+Rohan, no universo de Tolkien, é uma terra de bravos cavaleiros, vastas planícies e um povo leal e determinado. Assim como os Rohirrim, os cavaleiros de Rohan, estão sempre prontos para defender e apoiar, nosso aplicativo busca oferecer suporte contínuo ao motorista. Embarque nesta aventura e sinta-se em boa companhia!
 
-## What's inside?
+## Começando
 
-This Turborepo includes the following packages/apps:
+1. Baixe o aplicativo na [App Store](url-da-app-store-aqui) ou no [Google Play](url-do-google-play-aqui).
+2. Siga as instruções de instalação.
+3. Inicie o aplicativo e configure o seu perfil.
+4. Comece a sua jornada com Rohan ao seu lado!
 
-### Apps and Packages
+## Suporte
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+Se você tiver problemas ou perguntas, visite nossa [seção de suporte](url-da-seção-de-suporte-aqui) ou entre em contato pelo email [support@rohanapp.com](mailto:support@rohanapp.com).
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+## Contribuições
 
-### Utilities
+Este projeto é de código fechado. No entanto, feedbacks e sugestões são sempre bem-vindos!
 
-This Turborepo has some additional tools already setup for you:
+## Licença
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+Este software é licenciado sob [INSIRA A LICENÇA AQUI].
 
-### Build
+---
 
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+Desenvolvido com ❤️ por [Nome da Sua Empresa ou Seu Nome](url-do-seu-site-aqui).
