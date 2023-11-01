@@ -37,4 +37,4 @@ Este software é licenciado sob [INSIRA A LICENÇA AQUI].
 
 ---
 
-Desenvolvido com ❤️ por [Nome da Sua Empresa ou Seu Nome](url-do-seu-site-aqui).
+Desenvolvido com ❤️ por [NeXTIME](url-do-seu-site-aqui).

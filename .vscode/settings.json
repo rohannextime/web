@@ -6,6 +6,5 @@
     "activityBar.inactiveForeground": "#A2845E",
     "statusBar.foreground": "#000000",
     "statusBarItem.remoteForeground": "#000000",
-  },
-  "peacock.color": "#A2845E"
+  }
 }
