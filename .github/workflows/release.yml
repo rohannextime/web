@@ -1,0 +1,45 @@
+name: release
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  PNPM_VERSION: 8
+
+permissions:
+  contents: read
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup pnpm and cache
+        uses: ./.github/actions/prepare
+
+      - name: Install pnpm and dependencies
+        run: |
+          npm install -g pnpm@${{ env.PNPM_VERSION }}
+          pnpm install
+
+      - name: Yavanna Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
+
+      - name: Yavanna UI Release and Publish to NPM
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm run semantic-release:ui

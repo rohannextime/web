@@ -1,0 +1,32 @@
+# dependencies
+node_modules/
+.pnpm-store/
+.turbo/
+
+# next.js
+.next/
+out/
+
+# build output (generalized)
+**/dist
+**/storybook-static
+
+# misc
+.DS_Store
+
+# debug for pnpm
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+
+# coverage
+coverage/
+
+# temp files
+*.pem
+*~
+*.swp
+
+# typescript
+*.tsbuildinfo
