@@ -14,6 +14,9 @@ importers:
       '@nextime-ui/icons':
         specifier: file:/Users/pedroduarte/Dev/nextime-ui/packages/icons
         version: file:../nextime-ui/packages/icons(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.37)(react-dom@18.2.0)(react@18.2.0)
+      '@nextime-ui/next-js':
+        specifier: file:/Users/pedroduarte/Dev/nextime-ui/packages/next-js
+        version: file:../nextime-ui/packages/next-js(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.37)(react-dom@18.2.0)(react@18.2.0)
       '@nextime-ui/react':
         specifier: file:/Users/pedroduarte/Dev/nextime-ui/packages/react
         version: file:../nextime-ui/packages/react(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.37)(react-dom@18.2.0)(react@18.2.0)
@@ -4257,7 +4260,7 @@ packages:
       '@octokit/graphql': 7.0.2
       '@octokit/request': 8.1.5
       '@octokit/request-error': 5.0.1
-      '@octokit/types': 12.2.0
+      '@octokit/types': 12.3.0
       before-after-hook: 2.2.3
       universal-user-agent: 6.0.1
     dev: true
@@ -4266,7 +4269,7 @@ packages:
     resolution: {integrity: sha512-qhKW8YLIi+Kmc92FQUFGr++DYtkx/1fBv+Thua6baqnjnOsgBYJDCvWZR1YcINuHGOEQt416WOfE+A/oG60NBQ==}
     engines: {node: '>= 18'}
     dependencies:
-      '@octokit/types': 12.2.0
+      '@octokit/types': 12.3.0
       is-plain-object: 5.0.0
       universal-user-agent: 6.0.1
     dev: true
@@ -4276,7 +4279,7 @@ packages:
     engines: {node: '>= 18'}
     dependencies:
       '@octokit/request': 8.1.5
-      '@octokit/types': 12.2.0
+      '@octokit/types': 12.3.0
       universal-user-agent: 6.0.1
     dev: true
 
@@ -4291,7 +4294,7 @@ packages:
       '@octokit/core': '>=5'
     dependencies:
       '@octokit/core': 5.0.1
-      '@octokit/types': 12.2.0
+      '@octokit/types': 12.3.0
     dev: true
 
   /@octokit/plugin-retry@6.0.1(@octokit/core@5.0.1):
@@ -4302,7 +4305,7 @@ packages:
     dependencies:
       '@octokit/core': 5.0.1
       '@octokit/request-error': 5.0.1
-      '@octokit/types': 12.2.0
+      '@octokit/types': 12.3.0
       bottleneck: 2.19.5
     dev: true
 
@@ -4313,7 +4316,7 @@ packages:
       '@octokit/core': ^5.0.0
     dependencies:
       '@octokit/core': 5.0.1
-      '@octokit/types': 12.2.0
+      '@octokit/types': 12.3.0
       bottleneck: 2.19.5
     dev: true
 
@@ -4321,7 +4324,7 @@ packages:
     resolution: {integrity: sha512-X7pnyTMV7MgtGmiXBwmO6M5kIPrntOXdyKZLigNfQWSEQzVxR4a4vo49vJjTWX70mPndj8KhfT4Dx+2Ng3vnBQ==}
     engines: {node: '>= 18'}
     dependencies:
-      '@octokit/types': 12.2.0
+      '@octokit/types': 12.3.0
       deprecation: 2.3.1
       once: 1.4.0
     dev: true
@@ -4332,13 +4335,13 @@ packages:
     dependencies:
       '@octokit/endpoint': 9.0.2
       '@octokit/request-error': 5.0.1
-      '@octokit/types': 12.2.0
+      '@octokit/types': 12.3.0
       is-plain-object: 5.0.0
       universal-user-agent: 6.0.1
     dev: true
 
-  /@octokit/types@12.2.0:
-    resolution: {integrity: sha512-ZkdHqHJdifVndN7Pha10+qrgAjy3AcG//Vmjr/o5UFuTiYCcMhqDj39Yr9VM9zJ/42KO2xAYhV7cvLnLI9Kvwg==}
+  /@octokit/types@12.3.0:
+    resolution: {integrity: sha512-nJ8X2HRr234q3w/FcovDlA+ttUU4m1eJAourvfUUtwAWeqL8AsyRqfnLvVnYn3NFbUnsmzQCzLNdFerPwdmcDQ==}
     dependencies:
       '@octokit/openapi-types': 19.0.2
     dev: true
@@ -15903,6 +15906,27 @@ packages:
     resolution: {directory: ../nextime-ui/packages/icons, type: directory}
     id: file:../nextime-ui/packages/icons
     name: '@nextime-ui/icons'
+    dependencies:
+      '@chakra-ui/icons': 2.1.1(@chakra-ui/system@2.6.2)(react@18.2.0)
+      '@chakra-ui/react': 2.8.2(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.37)(framer-motion@10.16.4)(react-dom@18.2.0)(react@18.2.0)
+      '@chakra-ui/skip-nav': 2.1.0(@chakra-ui/system@2.6.2)(react@18.2.0)
+      '@chakra-ui/theme-tools': 2.1.2(@chakra-ui/styled-system@2.9.2)
+      '@emotion/react': 11.11.1(@types/react@18.2.37)(react@18.2.0)
+      '@emotion/styled': 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.37)(react@18.2.0)
+      '@phosphor-icons/react': 2.0.14(react-dom@18.2.0)(react@18.2.0)
+      framer-motion: 10.16.4(react-dom@18.2.0)(react@18.2.0)
+    transitivePeerDependencies:
+      - '@chakra-ui/styled-system'
+      - '@chakra-ui/system'
+      - '@types/react'
+      - react
+      - react-dom
+    dev: false
+
+  file:../nextime-ui/packages/next-js(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.37)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {directory: ../nextime-ui/packages/next-js, type: directory}
+    id: file:../nextime-ui/packages/next-js
+    name: '@nextime-ui/next-js'
     dependencies:
       '@chakra-ui/icons': 2.1.1(@chakra-ui/system@2.6.2)(react@18.2.0)
       '@chakra-ui/react': 2.8.2(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.37)(framer-motion@10.16.4)(react-dom@18.2.0)(react@18.2.0)

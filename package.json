@@ -44,6 +44,7 @@
     "@nextime-ui/icons": "file:/Users/pedroduarte/Dev/nextime-ui/packages/icons",
     "@nextime-ui/react": "file:/Users/pedroduarte/Dev/nextime-ui/packages/react",
     "@nextime-ui/templates": "file:/Users/pedroduarte/Dev/nextime-ui/packages/templates",
+    "@nextime-ui/next-js": "file:/Users/pedroduarte/Dev/nextime-ui/packages/next-js",
     "@nikolovlazar/chakra-ui-prose": "^1.2.1",
     "@react-spring/web": "^9.7.3",
     "axios": "^1.6.1",
