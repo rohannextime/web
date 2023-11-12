@@ -1,7 +1,7 @@
 {
-  "name": "@yavanna/ui",
+  "name": "@rohan/ui",
   "version": "0.0.0-development",
-  "description": "Yavanna UI é uma biblioteca de componentes para React, fundamentada na nextime-ui. Ela é focada para os projetos de Yavanna.",
+  "description": "Rohan UI é uma biblioteca de componentes para React, fundamentada na nextime-ui. Ela é focada para os projetos de Rohan.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -31,6 +31,6 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/nextimecode/yavanna.git"
+    "url": "https://github.com/rohannextime/web.git"
   }
 }

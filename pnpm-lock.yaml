@@ -93,6 +93,9 @@ importers:
       '@nextime-ui/ts-config':
         specifier: ^2.5.2
         version: 2.5.2
+      '@rohan/ui':
+        specifier: workspace:*
+        version: link:libs/ui
       '@storybook/addon-essentials':
         specifier: ^7.5.3
         version: 7.5.3(@types/react-dom@18.2.15)(@types/react@18.2.37)(encoding@0.1.13)(react-dom@18.2.0)(react@18.2.0)
@@ -153,9 +156,6 @@ importers:
       '@vitejs/plugin-react':
         specifier: ^4.1.1
         version: 4.1.1(vite@4.5.0)
-      '@yavanna/ui':
-        specifier: workspace:*
-        version: link:libs/ui
       commitizen:
         specifier: ^4.3.0
         version: 4.3.0(typescript@5.2.2)

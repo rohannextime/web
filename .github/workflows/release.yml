@@ -32,13 +32,13 @@ jobs:
           npm install -g pnpm@${{ env.PNPM_VERSION }}
           pnpm install
 
-      - name: Yavanna Release
+      - name: Rohan Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
 
-      - name: Yavanna UI Release and Publish to NPM
+      - name: Rohan UI Release and Publish to NPM
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
