@@ -8,15 +8,21 @@ importers:
 
   .:
     dependencies:
+      '@chakra-ui/next-js':
+        specifier: ^2.2.0
+        version: 2.2.0(@chakra-ui/react@2.8.2)(@emotion/react@11.11.1)(next@14.0.2)(react@18.2.0)
+      '@emotion/react':
+        specifier: ^11.11.1
+        version: 11.11.1(@types/react@18.2.37)(react@18.2.0)
+      '@emotion/styled':
+        specifier: ^11.11.0
+        version: 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.37)(react@18.2.0)
       '@next/font':
         specifier: ^14.0.2
         version: 14.0.2(next@14.0.2)
       '@nextime-ui/icons':
         specifier: file:/Users/pedroduarte/Dev/nextime-ui/packages/icons
         version: file:../nextime-ui/packages/icons(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.37)(react-dom@18.2.0)(react@18.2.0)
-      '@nextime-ui/next-js':
-        specifier: file:/Users/pedroduarte/Dev/nextime-ui/packages/next-js
-        version: file:../nextime-ui/packages/next-js(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.37)(react-dom@18.2.0)(react@18.2.0)
       '@nextime-ui/react':
         specifier: file:/Users/pedroduarte/Dev/nextime-ui/packages/react
         version: file:../nextime-ui/packages/react(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.37)(react-dom@18.2.0)(react@18.2.0)
@@ -220,7 +226,36 @@ importers:
         specifier: ^4.5.0
         version: 4.5.0(@types/node@20.9.0)
 
-  apps/rohan: {}
+  apps/www:
+    dependencies:
+      next:
+        specifier: 14.0.2
+        version: 14.0.2(@babel/core@7.23.3)(react-dom@18.2.0)(react@18.2.0)
+      react:
+        specifier: ^18
+        version: 18.2.0
+      react-dom:
+        specifier: ^18
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@types/node':
+        specifier: ^20
+        version: 20.9.0
+      '@types/react':
+        specifier: ^18
+        version: 18.2.37
+      '@types/react-dom':
+        specifier: ^18
+        version: 18.2.15
+      eslint:
+        specifier: ^8
+        version: 8.53.0
+      eslint-config-next:
+        specifier: 14.0.2
+        version: 14.0.2(eslint@8.53.0)(typescript@5.2.2)
+      typescript:
+        specifier: ^5
+        version: 5.2.2
 
   libs/docs: {}
 
@@ -1916,6 +1951,21 @@ packages:
       react-remove-scroll: 2.5.7(@types/react@18.2.37)(react@18.2.0)
     transitivePeerDependencies:
       - '@types/react'
+
+  /@chakra-ui/next-js@2.2.0(@chakra-ui/react@2.8.2)(@emotion/react@11.11.1)(next@14.0.2)(react@18.2.0):
+    resolution: {integrity: sha512-brCz0UEOlImX4Np2jDIaljZJkW6kiDSuXG5erxvYjZlklLhmti1zj0o1sSjt5yff1xndfgHoOJb+BYG5wx+vDg==}
+    peerDependencies:
+      '@chakra-ui/react': '>=2.4.0'
+      '@emotion/react': '>=11'
+      next: '>=13'
+      react: '>=18'
+    dependencies:
+      '@chakra-ui/react': 2.8.2(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.37)(framer-motion@10.16.4)(react-dom@18.2.0)(react@18.2.0)
+      '@emotion/cache': 11.11.0
+      '@emotion/react': 11.11.1(@types/react@18.2.37)(react@18.2.0)
+      next: 14.0.2(@babel/core@7.23.3)(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    dev: false
 
   /@chakra-ui/number-input@2.1.2(@chakra-ui/system@2.6.2)(react@18.2.0):
     resolution: {integrity: sha512-pfOdX02sqUN0qC2ysuvgVDiws7xZ20XDIlcNhva55Jgm095xjm8eVdIBfNm3SFbSUNxyXvLTW/YQanX74tKmuA==}
@@ -15906,27 +15956,6 @@ packages:
     resolution: {directory: ../nextime-ui/packages/icons, type: directory}
     id: file:../nextime-ui/packages/icons
     name: '@nextime-ui/icons'
-    dependencies:
-      '@chakra-ui/icons': 2.1.1(@chakra-ui/system@2.6.2)(react@18.2.0)
-      '@chakra-ui/react': 2.8.2(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.37)(framer-motion@10.16.4)(react-dom@18.2.0)(react@18.2.0)
-      '@chakra-ui/skip-nav': 2.1.0(@chakra-ui/system@2.6.2)(react@18.2.0)
-      '@chakra-ui/theme-tools': 2.1.2(@chakra-ui/styled-system@2.9.2)
-      '@emotion/react': 11.11.1(@types/react@18.2.37)(react@18.2.0)
-      '@emotion/styled': 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.37)(react@18.2.0)
-      '@phosphor-icons/react': 2.0.14(react-dom@18.2.0)(react@18.2.0)
-      framer-motion: 10.16.4(react-dom@18.2.0)(react@18.2.0)
-    transitivePeerDependencies:
-      - '@chakra-ui/styled-system'
-      - '@chakra-ui/system'
-      - '@types/react'
-      - react
-      - react-dom
-    dev: false
-
-  file:../nextime-ui/packages/next-js(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.37)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {directory: ../nextime-ui/packages/next-js, type: directory}
-    id: file:../nextime-ui/packages/next-js
-    name: '@nextime-ui/next-js'
     dependencies:
       '@chakra-ui/icons': 2.1.1(@chakra-ui/system@2.6.2)(react@18.2.0)
       '@chakra-ui/react': 2.8.2(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.37)(framer-motion@10.16.4)(react-dom@18.2.0)(react@18.2.0)
