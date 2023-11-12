@@ -1,4 +1,4 @@
 'use client'
-export { NextTemplateHome } from './components/templates'
-export type { LandingPageItems } from './@types'
-export type { NextCallToActionProps } from './components/organisms'
+export { NextTemplateHome } from './components/templates/NextTemplateHome'
+export type { LandingPageItems, Layout } from './@types/LandingPageItems'
+export type { NextCallToActionProps } from './components/organisms/NextCallToAction'

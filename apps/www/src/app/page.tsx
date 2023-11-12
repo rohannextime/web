@@ -1,10 +1,6 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import { items } from '../data'
+import { NextTemplateHome } from '../components/templates/NextTemplateHome'
 
-export default function Home() {
-  return (
-    <main>
-      teste
-    </main>
-  )
+export default function HomePage() {
+  return <NextTemplateHome items={items} />
 }

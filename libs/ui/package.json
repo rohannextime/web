@@ -28,9 +28,5 @@
   ],
   "author": "Pedro Duarte - NeXTIME",
   "license": "MIT",
-  "private": false,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rohannextime/web.git"
-  }
+  "private": false
 }
