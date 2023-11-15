@@ -1,1 +1,0 @@
-export { NextTemplateHome } from './NextTemplateHome'

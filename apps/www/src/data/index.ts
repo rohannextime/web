@@ -1,5 +1,5 @@
 import { LandingPageItems, Layout } from '../@types/LandingPageItems'
-import { NextCallToActionProps } from '../components/organisms/NextCallToAction'
+import { NextCallToActionProps } from '@nextime-ui/templates'
 
 export const url =
   process.env.NEXT_PUBLIC_SITE_URL || 'https://club.nextime.com.br'
