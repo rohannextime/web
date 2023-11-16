@@ -4,7 +4,7 @@ import React from 'react'
 
 import { CacheProvider } from '@chakra-ui/next-js'
 import { ChakraProvider } from '@nextime-ui/react'
-import { theme } from '../../../../libs/theme'
+import { theme } from '../theme'
 
 
 export function Providers({ children }: { children: React.ReactNode }) {
