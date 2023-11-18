@@ -9,17 +9,17 @@ export const Card = {
     position: 'relative',
     minWidth: '0px',
     wordWrap: 'break-word',
-    backgroundClip: 'border-box',
+    backgroundClip: 'border-box'
   },
   variants: {
     panel: (props: { colorMode?: 'light' | 'dark' }): SystemStyleObject => ({
       bg: props.colorMode === 'dark' ? 'gray.700' : 'white',
       width: '100%',
       boxShadow: '0px 3.5px 5.5px rgba(0, 0, 0, 0.02)',
-      borderRadius: '16px',
-    }),
+      borderRadius: '16px'
+    })
   },
   defaultProps: {
-    variant: 'panel',
-  },
+    variant: 'panel'
+  }
 }

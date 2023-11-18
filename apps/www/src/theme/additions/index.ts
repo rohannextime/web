@@ -1,4 +1,5 @@
 import { ThemeComponents } from '@nextime-ui/react'
+
 import { Card } from './card/Card'
 import { CardBody } from './card/CardBody'
 import { CardHeader } from './card/CardHeader'
@@ -12,5 +13,5 @@ export const components: ThemeComponents = {
   CardHeader,
   MainPanel,
   PanelContainer,
-  PanelContent,
+  PanelContent
 }

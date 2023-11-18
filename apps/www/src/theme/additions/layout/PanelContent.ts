@@ -3,6 +3,6 @@ export const PanelContent = {
     ms: 'auto',
     me: 'auto',
     ps: '15px',
-    pe: '15px',
-  },
+    pe: '15px'
+  }
 }

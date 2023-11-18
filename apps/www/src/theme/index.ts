@@ -1,14 +1,15 @@
 import { extendTheme } from '@nextime-ui/react'
+
+import { components } from './additions'
 import { colors } from './colors'
 import { config } from './config'
-import { styles } from './styles'
 import { fonts } from './fonts'
-import { components } from './additions'
+import { styles } from './styles'
 
 export const theme = extendTheme({
   colors,
   config,
   styles,
   fonts,
-  components,
+  components
 })

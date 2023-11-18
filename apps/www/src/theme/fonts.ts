@@ -5,5 +5,5 @@ const openSans = OpenSans({ subsets: ['latin'] })
 
 export const fonts = {
   heading: roboto.style.fontFamily,
-  body: openSans.style.fontFamily,
+  body: openSans.style.fontFamily
 }

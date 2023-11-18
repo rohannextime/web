@@ -10,7 +10,7 @@ export const styles = {
       fontFamily: 'body',
       color: mode('black', 'white')({ colorMode }),
       bg: mode('gray.200', 'black')({ colorMode }),
-      lineHeight: 'base',
-    },
-  }),
+      lineHeight: 'base'
+    }
+  })
 }

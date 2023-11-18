@@ -1,5 +1,6 @@
-import { LandingPageItems, Layout } from '../@types/LandingPageItems'
 import { NextCallToActionProps } from '../app/components/organisms/NextCallToAction'
+
+import { LandingPageItems, Layout } from '../@types/LandingPageItems'
 
 export const url =
   process.env.NEXT_PUBLIC_SITE_URL || 'https://club.nextime.com.br'
@@ -20,7 +21,7 @@ export const layout: Layout = {
   logoAlt: `${siteName} Logo`,
   logoSubtitle: siteName,
   bg: 'next-quaternary',
-  logoSubtitleColor: 'next-primary',
+  logoSubtitleColor: 'next-primary'
 }
 
 export const nextCallToActionItems: NextCallToActionProps[] = [
@@ -34,7 +35,7 @@ export const nextCallToActionItems: NextCallToActionProps[] = [
     height: 500,
     image: '/images/home/0.png',
     priority: true,
-    directionMd: 'row-reverse',
+    directionMd: 'row-reverse'
   },
   {
     id: '1',
@@ -45,7 +46,7 @@ export const nextCallToActionItems: NextCallToActionProps[] = [
     url: '/signup',
     width: 500,
     height: 500,
-    priority: true,
+    priority: true
   },
   {
     id: '2',
@@ -56,7 +57,7 @@ export const nextCallToActionItems: NextCallToActionProps[] = [
     width: 500,
     height: 500,
     image: '/images/home/2.png',
-    directionMd: 'row-reverse',
+    directionMd: 'row-reverse'
   },
   {
     id: '3',
@@ -66,11 +67,11 @@ export const nextCallToActionItems: NextCallToActionProps[] = [
     url: '/signup',
     width: 500,
     height: 500,
-    textButton: 'Comparar Desempenho',
+    textButton: 'Comparar Desempenho'
   }
 ]
 
 export const items: LandingPageItems = {
   layout,
-  nextCallToActionItems,
+  nextCallToActionItems
 }

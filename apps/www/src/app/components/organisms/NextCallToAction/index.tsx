@@ -1,7 +1,6 @@
-import React from 'react'
 import { Box, Button, Flex, Heading, Stack, Text } from '@nextime-ui/react'
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export interface NextCallToActionProps {
   color?: string
@@ -31,7 +30,7 @@ export const NextCallToAction = ({
   textButton = '< Faça um orçamento />',
   directionMd = 'row',
   directionBase = 'column',
-  priority = false,
+  priority = false
 }: NextCallToActionProps) => {
   return (
     <Stack
@@ -68,7 +67,7 @@ export const NextCallToAction = ({
                 color="next-dark"
                 bg={'next-primary'}
                 _hover={{
-                  bg: 'next-tertiary',
+                  bg: 'next-tertiary'
                 }}
               >
                 {textButton}
@@ -85,7 +84,7 @@ export const NextCallToAction = ({
             color="next-dark"
             bg={'next-primary'}
             _hover={{
-              bg: 'next-tertiary',
+              bg: 'next-tertiary'
             }}
           >
             {textButton}
