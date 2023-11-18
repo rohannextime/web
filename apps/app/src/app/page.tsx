@@ -1,6 +1,9 @@
-import { items } from '../data'
-import { NextTemplateHome } from './components'
+import Image from 'next/image'
 
-export default function HomePage() {
-  return <NextTemplateHome items={items} />
+export default function Home() {
+  return (
+    <main>
+      <h1>teste</h1>
+    </main>
+  )
 }
