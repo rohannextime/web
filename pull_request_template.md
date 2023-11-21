@@ -1,40 +1,45 @@
-# Rohan - O Amigo do Motorista
+## Objetivo
 
-![Logo do Rohan](url-da-imagem-do-logo-aqui)
+_Descreva a feature ou o problema e adicione links para a tarefa_
 
-## Sobre
+## Descrição
 
-"Rohan" é o seu novo companheiro nas estradas. Inspirado na vasta e mágica terra de Rohan do universo de Tolkien, este aplicativo foi projetado para ser o guardião e amigo fiel de todos os motoristas. Projetado para o motorista moderno, ele oferece recursos avançados que ajudam a garantir uma condução segura, eficiente e agradável.
+_Como essa mudança resolve o problema?_
 
-## Características
+### Tarefas
 
-- **Navegação Inteligente:** Seja guiado pelo melhor caminho com atualizações em tempo real.
-- **Suporte ao Motorista:** Dicas, lembretes e informações úteis para a sua jornada.
-- **Segurança em Primeiro Lugar:** Alertas e notificações para garantir que sua viagem seja tão segura quanto possível.
+- [ ] Utilize o checklist para melhorar a visualização das tarefas e indicar o andamento
+- [ ] Desenvolver testes automatizados
+- [ ] Documentar
 
-## Por que "Rohan"?
+### Dependências
 
-Rohan, no universo de Tolkien, é uma terra de bravos cavaleiros, vastas planícies e um povo leal e determinado. Assim como os Rohirrim, os cavaleiros de Rohan, estão sempre prontos para defender e apoiar, nosso aplicativo busca oferecer suporte contínuo ao motorista. Embarque nesta aventura e sinta-se em boa companhia!
+_Descreva as dependências deste PR, como: Reindexar a base de dados no ES ou Rodar migration_
 
-## Começando
+## Screenshots (Caso necessário)
 
-1. Baixe o aplicativo na [App Store](url-da-app-store-aqui) ou no [Google Play](url-do-google-play-aqui).
-2. Siga as instruções de instalação.
-3. Inicie o aplicativo e configure o seu perfil.
-4. Comece a sua jornada com Rohan ao seu lado!
+_Caso seja possível exemplificar a tarefa ou problema com alguma imagem, faça nesse espaço_
 
-## Suporte
+_Antes:_
+_Depois:_
 
-Se você tiver problemas ou perguntas, visite nossa [seção de suporte](url-da-seção-de-suporte-aqui) ou entre em contato pelo email [support@rohanapp.com](mailto:support@rohanapp.com).
+## Aprendizagem
 
-## Contribuições
+_Caso haja algum aprendizado interessante, compartilhe com a equipe_
+_EX.: Posts em blogs, bibliotecas utilizadas, add-ons utilizados, etc_
 
-Este projeto é de código fechado. No entanto, feedbacks e sugestões são sempre bem-vindos!
+## Todo o conteúdo, de uma vez só!
 
-## Licença
+copilot:all
 
-Este software é licenciado sob [INSIRA A LICENÇA AQUI].
+## Um resumo de um parágrafo das alterações na solicitação de pull.
 
----
+copilot:summary
 
-Desenvolvido com ❤️ por [Nome da Sua Empresa ou Seu Nome](url-do-seu-site-aqui).
+## Uma lista detalhada de alterações, incluindo links para as partes relevantes do código..
+
+copilot:walkthrough
+
+## Um poema sobre as alterações na solicitação de pull.
+
+copilot:poem
