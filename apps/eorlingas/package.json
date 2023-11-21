@@ -5,8 +5,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "clean": "rm -rf .next .turbo node_modules tsconfig.tsbuildinfo pnpm-lock.yaml && pnpm store prune",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "semantic-release": "semantic-release"
   }
 }
