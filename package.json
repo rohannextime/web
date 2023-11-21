@@ -41,6 +41,8 @@
     "@chakra-ui/next-js": "^2.2.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@hookform/error-message": "^2.0.1",
+    "@hookform/resolvers": "^3.3.2",
     "@next/font": "^14.0.3",
     "@nextime-ui/icons": "^2.6.0",
     "@nextime-ui/react": "^2.6.0",
@@ -62,6 +64,7 @@
     "react-tinder-card": "^1.6.4",
     "stripe": "^14.5.0",
     "uuid": "^9.0.1",
+    "zod": "^3.22.4",
     "zustand": "^4.4.6"
   },
   "devDependencies": {
