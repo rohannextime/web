@@ -5,5 +5,5 @@ export default function DashboardLayout({
 }: {
   children: React.ReactNode
 }) {
-  return <Box>pagina do dashboard{children}</Box>
+  return <Box>pagina de login{children}</Box>
 }
