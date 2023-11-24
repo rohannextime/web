@@ -1,7 +1,8 @@
 'use client'
 import { Box, Container, Text } from '@nextime-ui/react'
 
-import { LandingPageItems } from '../../../../@types/LandingPageItems'
+import { LandingPageItems } from '@/data/types/LandingPageItems'
+
 import {
   NextCallToAction,
   NextCallToActionProps

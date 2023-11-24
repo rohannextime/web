@@ -1,6 +1,6 @@
-import { NextCallToActionProps } from '../app/components/organisms/NextCallToAction'
+import { NextCallToActionProps } from '@/components/organisms/NextCallToAction'
 
-import { LandingPageItems, Layout } from '../@types/LandingPageItems'
+import { LandingPageItems, Layout } from '@/data/types/LandingPageItems'
 
 export const url =
   process.env.NEXT_PUBLIC_SITE_URL || 'https://club.nextime.com.br'
