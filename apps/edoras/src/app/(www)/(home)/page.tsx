@@ -1,3 +1,5 @@
+import { Button } from '@rohan/ui'
+
 export default function HomePage() {
-  return <h1>Teste</h1>
+  return <Button />
 }

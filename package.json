@@ -52,6 +52,7 @@
     "@nextime-ui/tokens": "^2.6.0",
     "@nikolovlazar/chakra-ui-prose": "^1.2.1",
     "@react-spring/web": "^9.7.3",
+    "@rohan/ui": "workspace:*",
     "axios": "^1.6.2",
     "axios-retry": "^3.9.1",
     "encoding": "^0.1.13",
