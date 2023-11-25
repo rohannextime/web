@@ -4,4 +4,5 @@ node_modules
 dist
 .turbo
 apps/*/.next/
-styled-system/*
+styled-system/
+styled-system
