@@ -1,7 +1,5 @@
-import { NextTemplateHome } from '../../../components'
-
-import { items } from '../../../data'
+import { Button } from '@rohan/ui'
 
 export default function HomePage() {
-  return <NextTemplateHome items={items} />
+  return <Button>Teste</Button>
 }
