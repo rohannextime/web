@@ -237,11 +237,7 @@ importers:
 
   apps/dunharrow: {}
 
-  apps/edoras:
-    devDependencies:
-      '@pandacss/dev':
-        specifier: ^0.19.0
-        version: 0.19.0(typescript@5.3.2)
+  apps/edoras: {}
 
   apps/westfold: {}
 
