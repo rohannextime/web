@@ -1,10 +1,11 @@
 {
   "name": "@rohan/ui",
   "version": "0.1.0",
-  "description": "Rohan UI é uma biblioteca de componentes para React",
+  "description": "",
   "private": false,
   "keywords": [
     "React",
+    "Chakra-UI",
     "Componentes",
     "UI Library",
     "Next.js",

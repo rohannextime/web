@@ -1,6 +1,7 @@
 {
   "extends": "@nextime-ui/ts-config/react.json",
   "include": [
-    "src"
+    "src",
+    "styled-system"
   ]
 }
