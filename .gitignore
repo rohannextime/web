@@ -9,6 +9,7 @@ node_modules/
 
 # panda css
 styled-system
+styled-system/
 
 # testing
 /coverage
