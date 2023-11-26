@@ -35,7 +35,7 @@
     "westfold:dev": "turbo run dev --filter westfold",
     "precommit": "turbo lint typecheck audit",
     "commit": "cz",
-    "prepare": "husky install",
+    "prepare": "husky install && turbo run prepare --parallel",
     "postinstall": "husky install",
     "depcheck": "depcheck"
   },

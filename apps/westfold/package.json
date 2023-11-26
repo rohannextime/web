@@ -10,6 +10,7 @@
     "start": "next start --port 3001",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "panda codegen"
   }
 }
