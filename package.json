@@ -76,6 +76,7 @@
     "@nextime-ui/eslint-config": "^2.6.0",
     "@nextime-ui/ts-config": "^2.6.0",
     "@pandacss/dev": "^0.19.0",
+    "@rohan/ui": "workspace:^",
     "@storybook/addon-essentials": "^7.6.0",
     "@storybook/addon-interactions": "^7.6.0",
     "@storybook/addon-links": "^7.6.0",

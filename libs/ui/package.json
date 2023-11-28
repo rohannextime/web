@@ -5,13 +5,10 @@
   "main": "dist/preset.js",
   "scripts": {
     "build": "tsup",
+    "dev": "tsup --watch",
     "prepare": "panda codegen"
   },
   "keywords": [],
   "author": "Pedro Duarte",
-  "license": "ISC",
-  "devDependencies": {
-    "@pandacss/dev": "^0.19.0",
-    "tsup": "^8.0.1"
-  }
+  "license": "ISC"
 }
