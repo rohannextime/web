@@ -32,6 +32,7 @@ jobs:
         run: |
           npm install -g pnpm@${{ env.PNPM_VERSION }}
           pnpm install
+          pnpm ui:build
 
       - name: Run lint
         run: pnpm run lint

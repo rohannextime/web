@@ -33,6 +33,8 @@
     "edoras:dev": "turbo run dev --filter edoras",
     "westfold:build": "turbo run build --filter westfold",
     "westfold:dev": "turbo run dev --filter westfold",
+    "ui:build": "turbo run build --filter ui",
+    "ui:dev": "turbo run dev --filter ui",
     "precommit": "turbo lint typecheck audit",
     "commit": "cz",
     "prepare": "husky install && turbo run prepare --parallel",
