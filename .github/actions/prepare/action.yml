@@ -37,6 +37,7 @@ runs:
         npm install -g pnpm
         pnpm install --frozen-lockfile
         pnpm clean:cache
+        pnpm ui:build
 
     - name: Save node_modules cache
       if: always() && inputs.install == 'true'
