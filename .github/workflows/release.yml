@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  PNPM_VERSION: 8
+  PNPM_VERSION: '8.10.5'
 
 permissions:
   contents: read
