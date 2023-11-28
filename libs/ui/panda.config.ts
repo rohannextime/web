@@ -1,8 +1,6 @@
 import { defineConfig } from '@pandacss/dev'
 
 export default defineConfig({
-  presets: ['@pandacss/dev/presets', '@rohan/ui'],
-
   // Whether to use css reset
   preflight: true,
 
@@ -18,6 +16,5 @@ export default defineConfig({
   },
 
   // The output directory for your css system
-  outdir: 'styled-system',
-  jsxFramework: 'react'
+  outdir: 'styled-system'
 })

@@ -1,10 +1,9 @@
 import '@/app/global.css'
-import { Button } from '@rohan/ui'
+import { css } from '../../../../styled-system/css'
 export default function Home() {
   return (
     <main>
-      <Button />
-      <h1>teste</h1>
+      <div className={css({ color: 'primary' })}>teste</div>
     </main>
   )
 }

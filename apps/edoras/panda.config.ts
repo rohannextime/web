@@ -1,7 +1,7 @@
 import { defineConfig } from '@pandacss/dev'
 
 export default defineConfig({
-  presets: ['@pandacss/dev/presets', '@rohan/ui'],
+  // presets: ['@pandacss/dev/presets', '@rohan/ui'],
 
   // Whether to use css reset
   preflight: true,

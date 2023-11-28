@@ -12,5 +12,8 @@
     "typecheck": "tsc --noEmit",
     "semantic-release": "semantic-release",
     "prepare": "panda codegen"
+  },
+  "devDependencies": {
+    "@rohan/ui": "workspace:^"
   }
 }
