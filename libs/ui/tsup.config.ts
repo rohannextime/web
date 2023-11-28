@@ -1,5 +1,6 @@
 import { defineConfig } from 'tsup'
 
 export default defineConfig({
-  entry: ['src/preset.ts']
+  entry: ['src/index.ts'],
+  external: ['styled-system']
 })

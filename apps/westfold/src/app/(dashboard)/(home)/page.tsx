@@ -1,5 +1,5 @@
 import '@/app/global.css'
-import { css } from '../../../../styled-system/css'
+import { css } from 'styled-system/css'
 export default function Home() {
   return (
     <main>
