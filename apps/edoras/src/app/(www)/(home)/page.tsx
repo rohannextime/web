@@ -1,12 +1,5 @@
-import { Button } from '@rohan/ui'
-
-import { ButtonTeste } from './ButtonTeste'
+import { css } from '../../../../styled-system/css'
 
 export default function HomePage() {
-  return (
-    <>
-      <Button />
-      <ButtonTeste />
-    </>
-  )
+  return <div className={css({ color: 'primary' })}>Edoras</div>
 }

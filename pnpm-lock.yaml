@@ -234,7 +234,11 @@ importers:
 
   apps/dunharrow: {}
 
-  apps/edoras: {}
+  apps/edoras:
+    devDependencies:
+      '@rohan/ui':
+        specifier: workspace:^
+        version: link:../../libs/ui
 
   apps/westfold:
     devDependencies:
