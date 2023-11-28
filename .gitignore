@@ -26,6 +26,7 @@ out/
 # build output (generalized)
 **/dist
 **/storybook-static
+dist/
 dist
 dist-ssr
 

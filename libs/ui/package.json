@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "main": "dist/preset.js",
   "scripts": {
-    "build": "tsup"
+    "prepare": "panda codegen",
+    "build": "tsup",
+    "dev": "tsup --watch"
   }
 }
