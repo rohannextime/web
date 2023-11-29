@@ -1,11 +1,15 @@
 import React from 'react'
 
-import { css } from 'styled-system/css'
+import { styled } from 'styled-system/jsx'
 
 export interface ButtonProps {
   children: React.ReactNode
 }
 
 export const Button = ({ children }: ButtonProps) => {
-  return <button className={css({ color: 'blue.100' })}>{children}</button>
+  return (
+    <styled.button bg="blue.500" color="white" py="2" px="4" rounded="md">
+      {children}
+    </styled.button>
+  )
 }
