@@ -27,17 +27,17 @@ importers:
         specifier: ^14.0.3
         version: 14.0.3(next@14.0.3)
       '@nextime-ui/icons':
-        specifier: ^2.6.0
-        version: 2.6.0(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^2.6.1
+        version: 2.6.1(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)
       '@nextime-ui/react':
-        specifier: ^2.6.0
-        version: 2.6.0(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^2.6.1
+        version: 2.6.1(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)
       '@nextime-ui/theme-tools':
-        specifier: ^2.6.0
-        version: 2.6.0(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^2.6.1
+        version: 2.6.1(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0)
       '@nextime-ui/tokens':
-        specifier: ^2.6.0
-        version: 2.6.0
+        specifier: ^2.6.1
+        version: 2.6.1
       '@nikolovlazar/chakra-ui-prose':
         specifier: ^1.2.1
         version: 1.2.1(@chakra-ui/react@2.8.2)(@chakra-ui/system@2.6.2)(react@18.2.0)
@@ -103,11 +103,11 @@ importers:
         specifier: ^18.4.3
         version: 18.4.3
       '@nextime-ui/eslint-config':
-        specifier: ^2.6.0
-        version: 2.6.0(eslint-plugin-import@2.29.0)(eslint-plugin-n@16.3.1)(eslint-plugin-promise@6.1.1)(typescript@5.3.2)
+        specifier: ^2.6.1
+        version: 2.6.1(eslint-plugin-import@2.29.0)(eslint-plugin-n@16.3.1)(eslint-plugin-promise@6.1.1)(typescript@5.3.2)
       '@nextime-ui/ts-config':
-        specifier: ^2.6.0
-        version: 2.6.0
+        specifier: ^2.6.1
+        version: 2.6.1
       '@pandacss/dev':
         specifier: ^0.19.0
         version: 0.19.0(typescript@5.3.2)
@@ -237,11 +237,39 @@ importers:
 
   apps/dunharrow: {}
 
-  apps/edoras: {}
+  apps/edoras:
+    devDependencies:
+      '@rohan/ui':
+        specifier: workspace:^
+        version: link:../../libs/ui
 
-  apps/westfold: {}
+  apps/westfold:
+    devDependencies:
+      '@rohan/ui':
+        specifier: workspace:^
+        version: link:../../libs/ui
 
-  libs/ui: {}
+  libs/ui:
+    dependencies:
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@pandacss/dev':
+        specifier: ^0.19.0
+        version: 0.19.0(typescript@5.3.2)
+      '@types/react':
+        specifier: 18.2.39
+        version: 18.2.39
+      '@types/react-dom':
+        specifier: 18.2.17
+        version: 18.2.17
+      tsup:
+        specifier: ^8.0.1
+        version: 8.0.1(@swc/core@1.3.99)(postcss@8.4.31)(typescript@5.3.2)
 
 packages:
 
@@ -4728,8 +4756,8 @@ packages:
     dev: false
     optional: true
 
-  /@nextime-ui/eslint-config@2.6.0(eslint-plugin-import@2.29.0)(eslint-plugin-n@16.3.1)(eslint-plugin-promise@6.1.1)(typescript@5.3.2):
-    resolution: {integrity: sha512-LC5xS1bX7+NEKxZUdl7Hz2MBZIV/jY+I1hRLCXGWCio7j8uBepT6d3pH4UYpupGi/LCYGBujUjBsjuJnncFETQ==}
+  /@nextime-ui/eslint-config@2.6.1(eslint-plugin-import@2.29.0)(eslint-plugin-n@16.3.1)(eslint-plugin-promise@6.1.1)(typescript@5.3.2):
+    resolution: {integrity: sha512-V1o70lpxGqVvt53fKVsQYhpdI4JH7fuCkoN7MxZDcl+eXHWU4dVSKhDIMele62j0uy4eRGpsv8T0hzjnoM6LEg==}
     dependencies:
       eslint: 8.54.0
       eslint-config-next: 14.0.3(eslint@8.54.0)(typescript@5.3.2)
@@ -4744,8 +4772,8 @@ packages:
       - typescript
     dev: true
 
-  /@nextime-ui/icons@2.6.0(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-upIZB47XiRKUurTyVbXQB3zZQHZRlvCUUraA3zWjbU/QaM1u8LUIEHJ1ng6SzLzQCqD/e37s/zv617y3RoemXw==}
+  /@nextime-ui/icons@2.6.1(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-4lTgECXu++HgWenyHXGzK7gOAyd3CktRAA5qfIUOFo6I7eipkHBZSKpoLzxd9sO0+XdnKBU1PxXNrsgFFveBdw==}
     dependencies:
       '@chakra-ui/icons': 2.1.1(@chakra-ui/system@2.6.2)(react@18.2.0)
       '@chakra-ui/react': 2.8.2(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.39)(framer-motion@10.16.5)(react-dom@18.2.0)(react@18.2.0)
@@ -4763,8 +4791,8 @@ packages:
       - react-dom
     dev: false
 
-  /@nextime-ui/react@2.6.0(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-rEfrdaN52ebgwU0k5ZcBGdaNIAdrXgqW9/4hv5Y3dzY4JKkV/BQGN/XFmgWbCAjKJ9d4vUVwG0x6hypvDQD/bw==}
+  /@nextime-ui/react@2.6.1(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-a5jSCOWqL2IgnDWnw0JDiLoJQXPKlcsl7gt/zcvDl/hsaJLhOjm/UX5HZaXaInV/cBoBq2Y7sz+1UP+sE+qX3Q==}
     dependencies:
       '@chakra-ui/icons': 2.1.1(@chakra-ui/system@2.6.2)(react@18.2.0)
       '@chakra-ui/react': 2.8.2(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.39)(framer-motion@10.16.5)(react-dom@18.2.0)(react@18.2.0)
@@ -4782,8 +4810,8 @@ packages:
       - react-dom
     dev: false
 
-  /@nextime-ui/theme-tools@2.6.0(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-41BR9mJOwjbLI8pVXs1URq/05GAO9QASUmJWwu9dfg+HWqJd8vVHilVNpQcFBvB7ZxczSR9wgNLHeNdjR9EqBA==}
+  /@nextime-ui/theme-tools@2.6.1(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.2.39)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-iTC84UCXgZj80xIa89hSxaJNfDHM9L+msLvrdV4X2yZdZyW6VpFPyMbXwlbHZnRkQMHUvnWstUjgmYtYdG5wtg==}
     dependencies:
       '@chakra-ui/icons': 2.1.1(@chakra-ui/system@2.6.2)(react@18.2.0)
       '@chakra-ui/react': 2.8.2(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.39)(framer-motion@10.16.5)(react-dom@18.2.0)(react@18.2.0)
@@ -4801,12 +4829,12 @@ packages:
       - react-dom
     dev: false
 
-  /@nextime-ui/tokens@2.6.0:
-    resolution: {integrity: sha512-y9v1mGpbXXNtUz86rhbJ7+tMDJHhpDAjR6WnCqbNWXGMAarLvLVunDc/rlv3qhyvnYOkZmNNw2QB/838lJxPaw==}
+  /@nextime-ui/tokens@2.6.1:
+    resolution: {integrity: sha512-DKMQBq2aAOBfbR0DqiI6b2jAnQAXgYiPWWOUPWJqjmlSZ8GB4owtQizxU8Tcnxwl6YaKZ7eCMcBJA+zNsXhWQg==}
     dev: false
 
-  /@nextime-ui/ts-config@2.6.0:
-    resolution: {integrity: sha512-7nigJXHiCuiSsBtGbDfv51OeL8pwdVooYJr0t3f0IfCHFhPR+oyjNahdZhBK9yigYsfeAGkTcHgtLAU/58PVMw==}
+  /@nextime-ui/ts-config@2.6.1:
+    resolution: {integrity: sha512-S+EjSVpfl4O40am+0CqXDxcBmLT+1jjfdYJd0iXqO+kovHhmmJzFJ7y1k1wtB/QTFBXCBZy6zZYUzlMCsfcitQ==}
     dev: true
 
   /@nikolovlazar/chakra-ui-prose@1.2.1(@chakra-ui/react@2.8.2)(@chakra-ui/system@2.6.2)(react@18.2.0):
