@@ -1,2 +1,1 @@
-export * from './button'
-export { default } from './preset'
+export * from './Button'

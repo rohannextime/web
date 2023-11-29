@@ -4,14 +4,9 @@
   "description": "Parte deslogada o www - Edoras, a majestosa capital de Rohan, representa a face pública e acolhedora do reino. Nosso projeto serve como o portal deslogado de acesso ao mundo de Rohan, oferecendo uma introdução informativa e envolvente para os visitantes. Este site é otimizado para SEO, garantindo que todos os que procuram por Rohan encontrem um caminho claro e convidativo para explorar suas terras e histórias.",
   "private": true,
   "scripts": {
-    "prepare": "panda codegen",
     "dev": "rm -rf .next && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
-  },
-  "devDependencies": {
-    "@pandacss/dev": "^0.19.0",
-    "@rohan/ui": "workspace:^"
   }
 }
