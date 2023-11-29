@@ -239,12 +239,18 @@ importers:
 
   apps/edoras:
     devDependencies:
+      '@pandacss/dev':
+        specifier: ^0.19.0
+        version: 0.19.0(typescript@5.3.2)
       '@rohan/ui':
         specifier: workspace:^
         version: link:../../libs/ui
 
   apps/westfold:
     devDependencies:
+      '@pandacss/dev':
+        specifier: ^0.19.0
+        version: 0.19.0(typescript@5.3.2)
       '@rohan/ui':
         specifier: workspace:^
         version: link:../../libs/ui

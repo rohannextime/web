@@ -1,5 +1,9 @@
-import { css } from 'styled-system/css'
+import { Button } from '@rohan/ui'
 
 export default function HomePage() {
-  return <div className={css({ color: 'primary' })}>Edoras</div>
+  return (
+    <div>
+      <Button>Click me</Button>
+    </div>
+  )
 }
