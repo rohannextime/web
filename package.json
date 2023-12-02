@@ -46,6 +46,7 @@
     "@nextime-ui/react": "^2.6.1",
     "@nextime-ui/theme-tools": "^2.6.1",
     "@nextime-ui/tokens": "^2.6.1",
+    "@t3-oss/env-nextjs": "^0.7.1",
     "next": "^14.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
