@@ -1,4 +1,5 @@
-import React, { ComponentProps } from 'react'
+import React from 'react'
+import type { ComponentProps } from 'react'
 
 import { twMerge } from 'tailwind-merge'
 

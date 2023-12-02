@@ -5,5 +5,9 @@ export interface ButtonProps {
 }
 
 export const Button = ({ children }: ButtonProps) => {
-  return <h1>{children}</h1>
+  return (
+    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      {children}
+    </button>
+  )
 }
