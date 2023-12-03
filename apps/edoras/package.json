@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "rm -rf .next && next dev",
+    "clean": "rm -rf .turbo .next dist node_modules pnpm-lock.yaml",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
