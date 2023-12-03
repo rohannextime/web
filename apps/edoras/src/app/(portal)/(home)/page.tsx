@@ -1,18 +1,19 @@
 import { Button } from '@rohan/ui'
 
-async function getHomeData() {
-  const delay = () => new Promise(resolve => setTimeout(resolve, 3000))
-  await delay()
-  return {
-    title: 'Doideira'
-  }
+import { api } from '@/data/api'
+import { HomeProps } from '@/data/types/home'
+
+async function getHomeData(): Promise<HomeProps> {
+  const response = await api('/drivers')
+  const message = await response.json()
+  return message
 }
 export default async function Home() {
-  const { title } = await getHomeData()
+  const { message } = await getHomeData()
+  console.log(message)
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>{title}</h1>
-      <Button>Click me</Button>
+      <Button>{message}</Button>
     </main>
   )
 }
