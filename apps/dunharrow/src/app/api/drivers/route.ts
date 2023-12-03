@@ -1,4 +1,5 @@
 export async function GET() {
-  console.log('api chamada aqui')
+  const delay = () => new Promise(resolve => setTimeout(resolve, 3000))
+  await delay()
   return Response.json({ message: 'Teste' })
 }

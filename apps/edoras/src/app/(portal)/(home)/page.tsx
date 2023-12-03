@@ -10,7 +10,6 @@ async function getHomeData(): Promise<HomeProps> {
 }
 export default async function Home() {
   const { message } = await getHomeData()
-  console.log(message)
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <Button>{message}</Button>
