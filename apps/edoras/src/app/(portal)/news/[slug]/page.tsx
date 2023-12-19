@@ -15,6 +15,15 @@ export async function generateMetadata({
   }
 }
 
+// TODO: deve adicionar os produtos mais usados aqui para gerar eles no momento do build
+export function generateStaticParams() {
+  return [
+    {
+      slug: 'titulo-do-artigo'
+    }
+  ]
+}
+
 export default function NewsPage() {
   return (
     <div>
