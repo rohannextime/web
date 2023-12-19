@@ -1,4 +1,20 @@
+import { Metadata } from 'next'
 import Image from 'next/image'
+
+interface NewsProps {
+  params: {
+    slug: string
+  }
+}
+
+export async function generateMetadata({
+  params
+}: NewsProps): Promise<Metadata> {
+  return {
+    title: params.slug
+  }
+}
+
 export default function NewsPage() {
   return (
     <div>

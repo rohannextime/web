@@ -1,9 +1,15 @@
+import { Metadata } from 'next'
+
 import GithubProfile from '@/components/GithubProfile'
 
 import { Button } from '@rohan/ui'
 
 import { api } from '@/data/api'
 import { HomeProps } from '@/data/types/home'
+
+export const metadata: Metadata = {
+  title: 'Home'
+}
 
 async function getHomeData(): Promise<HomeProps> {
   const response = await api('/drivers')
