@@ -52,6 +52,11 @@
       "outputs": [],
       "dependsOn": []
     },
+    "prepare": {
+      "cache": false,
+      "outputs": [],
+      "dependsOn": []
+    },
     "reset:all": {
       "cache": false,
       "dependsOn": [
