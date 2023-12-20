@@ -23,6 +23,7 @@ export function generateStaticParams() {
     }
   ]
 }
+// TODO: add getNews para buscar na api dunharrow os artigos
 
 export default function NewsPage() {
   return (
