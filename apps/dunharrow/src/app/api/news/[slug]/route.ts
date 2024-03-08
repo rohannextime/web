@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-import data from '../data.json'
+import { products } from '../../data'
 
 export async function GET(
   _: Request,
@@ -10,7 +10,7 @@ export async function GET(
 
   const slug = z.string().parse(params.slug)
 
-  const product = data.products.find(product => product.slug === slug)
+  const product = products.find(product => product.slug === slug)
 
   if (!product) {
     return Response.json({ message: 'Product not found.' }, { status: 400 })
