@@ -12,11 +12,11 @@ styled-system
 styled-system/
 
 # testing
-/coverage
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
+**/coverage
+**/test-results/
+**/playwright-report/
+**/blob-report/
+**/playwright/.cache/
 
 # next.js
 .next/
