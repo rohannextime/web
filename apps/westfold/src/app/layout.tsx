@@ -10,10 +10,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | rohan',
-    default: 'rohan'
+    template: '%s | Rohan',
+    default: 'Rohan'
   },
-  description: ''
+  description: 'O amigo do motorista'
 }
 
 export default function RootLayout({
