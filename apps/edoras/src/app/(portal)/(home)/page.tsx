@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-import GithubProfile from '@/components/GithubProfile'
+// import GithubProfile from '@/components/GithubProfile'
 
 // import { Button } from '@rohan/ui'
 
@@ -21,7 +21,7 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {/* <Button>{message}</Button> */}
-      <GithubProfile />
+      {/* <GithubProfile /> */}
     </main>
   )
 }
