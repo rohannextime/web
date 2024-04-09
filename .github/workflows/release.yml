@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  PNPM_VERSION: 8
+  PNPM_VERSION: '8.10.5'
 
 permissions:
   contents: read
@@ -35,11 +35,4 @@ jobs:
       - name: Rohan Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
-
-      - name: Rohan UI Release and Publish to NPM
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm run semantic-release:ui

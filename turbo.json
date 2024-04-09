@@ -1,16 +1,10 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": [
-    "tsconfig.json"
-  ],
-  "globalEnv": [
-    "GITHUB_TOKEN"
-  ],
+  "globalDependencies": ["tsconfig.json"],
+  "globalEnv": ["GITHUB_TOKEN"],
   "pipeline": {
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
+      "dependsOn": ["^build"],
       "outputs": [
         ".next/**",
         "!.next/cache/**",
@@ -20,12 +14,8 @@
     },
     "docs:build": {
       "cache": true,
-      "dependsOn": [
-        "^docs:build"
-      ],
-      "outputs": [
-        "storybook-static/**"
-      ]
+      "dependsOn": ["^docs:build"],
+      "outputs": ["storybook-static/**"]
     },
     "audit": {
       "cache": false,
@@ -52,32 +42,37 @@
       "outputs": [],
       "dependsOn": []
     },
+    "prepare": {
+      "cache": false,
+      "outputs": [],
+      "dependsOn": []
+    },
     "reset:all": {
       "cache": false,
-      "dependsOn": [
-        "clean"
-      ],
+      "dependsOn": ["clean"],
       "outputs": []
     },
     "release": {
       "cache": false,
-      "dependsOn": [
-        "build"
-      ],
+      "dependsOn": ["build"],
       "outputMode": "new-only"
     },
     "start": {
       "cache": false,
-      "dependsOn": [
-        "build"
-      ],
+      "dependsOn": ["build"],
       "outputs": []
     },
     "typecheck": {
       "cache": false,
-      "outputs": [
-        "tsconfig.tsbuildinfo"
-      ]
-    }
+      "outputs": ["tsconfig.tsbuildinfo"]
+    },
+    "test": {},
+    "e2e": {},
+    "e2e:report": {},
+    "e2e:ui": {},
+    "e2e:chromium": {},
+    "e2e:debug": {},
+    "e2e:codegen": {},
+    "storybook": {}
   }
 }

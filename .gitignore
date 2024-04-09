@@ -7,8 +7,21 @@ node_modules/
 .pnp.js
 .yarn/install-state.gz
 
+# panda css
+styled-system
+styled-system/
+
 # testing
-/coverage
+**/coverage
+**/test-results/
+**/playwright-report/
+**/blob-report/
+**/playwright/.cache/
+coverage
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
 
 # next.js
 .next/
@@ -22,12 +35,27 @@ out/
 # build output (generalized)
 **/dist
 **/storybook-static
+dist/
+dist
+dist-ssr
 
 # misc
 .DS_Store
 *.pem
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
 
 # debug for pnpm
+logs
+*.log
 .pnpm-debug.log*
 npm-debug.log*
 yarn-debug.log*

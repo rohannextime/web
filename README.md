@@ -23,6 +23,26 @@ Rohan, no universo de Tolkien, é uma terra de bravos cavaleiros, vastas planíc
 3. Inicie o aplicativo e configure o seu perfil.
 4. Comece a sua jornada com Rohan ao seu lado!
 
+## Tests e2e
+
+`pnpm exec playwright test`
+Runs the end-to-end tests.
+
+`pnpm exec playwright test --ui`
+Starts the interactive UI mode.
+
+`pnpm exec playwright test --project=chromium`
+Runs the tests only on Desktop Chrome.
+
+`pnpm exec playwright test example`
+Runs the tests in a specific file.
+
+`pnpm exec playwright test --debug`
+Runs the tests in debug mode.
+
+`pnpm exec playwright codegen`
+Auto generate tests with Codegen.
+
 ## Suporte
 
 Se você tiver problemas ou perguntas, visite nossa [seção de suporte](url-da-seção-de-suporte-aqui) ou entre em contato pelo email [support@rohanapp.com](mailto:support@rohanapp.com).
