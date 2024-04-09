@@ -42,7 +42,6 @@ dist-ssr
 # misc
 .DS_Store
 *.pem
-.vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
