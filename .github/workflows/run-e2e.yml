@@ -57,6 +57,3 @@ jobs:
           name: playwright-report
           path: apps/${{ env.PROJECT_NAME }}/playwright-report/
           retention-days: 30
-
-      - name: List Playwright report directory contents
-        run: ls -lah apps/${{ env.PROJECT_NAME }}/
