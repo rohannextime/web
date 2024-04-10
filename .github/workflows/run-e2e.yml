@@ -46,7 +46,13 @@ jobs:
         run: pnpm exec playwright install --with-deps
 
       - name: Run Playwright tests
-        run: pnpm exec playwright test
+        run: |
+          DEPLOYMENT_URL=${{ github.event.deployment_status.environment_url }}
+          PROJECT_NAME=$(echo "$DEPLOYMENT_URL" | sed -e 's#https://##' -e 's#-.*##')
+          echo "Running E2E tests for project: $PROJECT_NAME"
+
+          # Executar o script de teste E2E específico do projeto.
+          pnpm run ${PROJECT_NAME}:e2e
         env:
           BASE_URL: ${{ github.event.deployment_status.environment_url }}
 
