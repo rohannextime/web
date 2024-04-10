@@ -51,3 +51,5 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
+      - name: List Playwright report directory contents
+        run: ls -lah playwright-report/
