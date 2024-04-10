@@ -4,10 +4,16 @@
   "description": "Parte deslogada o www - Edoras, a majestosa capital de Rohan, representa a face pública e acolhedora do reino. Nosso projeto serve como o portal deslogado de acesso ao mundo de Rohan, oferecendo uma introdução informativa e envolvente para os visitantes. Este site é otimizado para SEO, garantindo que todos os que procuram por Rohan encontrem um caminho claro e convidativo para explorar suas terras e histórias.",
   "private": true,
   "scripts": {
-    "dev": "rm -rf .next && next dev",
+    "dev": "rm -rf .next && next dev --port 3001",
     "clean": "rm -rf .turbo .next dist node_modules pnpm-lock.yaml",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start --port 3001",
+    "lint": "next lint",
+    "e2e": "pnpm exec playwright test",
+    "e2e:ui": "pnpm exec playwright test --ui",
+    "e2e:chromium": "pnpm exec playwright test --project=chromium",
+    "e2e:debug": "pnpm exec playwright test --debug",
+    "e2e:codegen": "pnpm exec playwright codegen",
+    "e2e:report": "pnpm exec playwright show-report"
   }
 }
