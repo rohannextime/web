@@ -55,8 +55,8 @@ jobs:
         if: always()
         with:
           name: playwright-report
-          path: app/${{ env.PROJECT_NAME }}/playwright-report/
+          path: apps/${{ env.PROJECT_NAME }}/playwright-report/
           retention-days: 30
 
       - name: List Playwright report directory contents
-        run: ls -lah app/${{ env.PROJECT_NAME }}/playwright-report/
+        run: ls -lah apps/${{ env.PROJECT_NAME }}/
