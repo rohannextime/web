@@ -4,7 +4,7 @@
   "description": "Parte deslogada o www - Edoras, a majestosa capital de Rohan, representa a face pública e acolhedora do reino. Nosso projeto serve como o portal deslogado de acesso ao mundo de Rohan, oferecendo uma introdução informativa e envolvente para os visitantes. Este site é otimizado para SEO, garantindo que todos os que procuram por Rohan encontrem um caminho claro e convidativo para explorar suas terras e histórias.",
   "private": true,
   "scripts": {
-    "dev": "rm -rf .next && next dev --port 3001",
+    "dev": "rm -rf .next && next dev --port 3000",
     "clean": "rm -rf .turbo .next dist node_modules pnpm-lock.yaml",
     "build": "next build",
     "start": "next start --port 3001",
