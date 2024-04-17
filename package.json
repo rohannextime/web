@@ -51,8 +51,8 @@
     "ui:dev": "turbo run dev --filter ui",
     "precommit": "turbo lint typecheck audit",
     "commit": "cz",
-    "prepare": "husky install",
-    "postinstall": "husky install",
+    "prepare": "husky",
+    "postinstall": "husky",
     "depcheck": "depcheck"
   },
   "dependencies": {
@@ -100,7 +100,7 @@
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "depcheck": "^1.4.7",
-    "eslint": "^9.0.0",
+    "eslint": "^8.57.0",
     "eslint-config-next": "^14.2.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-turbo": "^1.13.2",
