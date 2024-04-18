@@ -58,3 +58,64 @@ Este software é licenciado sob [INSIRA A LICENÇA AQUI].
 ---
 
 Desenvolvido com ❤️ por [NeXTIME](url-do-seu-site-aqui).
+
+## FAQ
+
+## Client-Side Rendering em Páginas Estáticas com `useSearchParams`
+
+### Problema
+
+Durante a renderização estática, toda a página pode ser convertida para renderização no lado do cliente devido ao uso de `useSearchParams`, caso não exista um limite de `Suspense` que o intercepte.
+
+Isso ocorre porque, ao utilizar `useSearchParams` em uma rota estática, a árvore de componentes até o limite de `Suspense` mais próximo será renderizada no lado do cliente. Esse comportamento permite que parte da página seja renderizada estaticamente, enquanto a parte dinâmica que utiliza `searchParams` pode ser renderizada no lado do cliente.
+
+### Solução
+
+Para reduzir a porção da rota que é renderizada no lado do cliente, você pode encapsular o componente que utiliza `useSearchParams` dentro de um limite de `Suspense`.
+
+#### Exemplo
+
+**app/dashboard/search-bar.tsx**
+
+```tsx
+'use client'
+
+import { useSearchParams } from 'next/navigation'
+
+export default function SearchBar() {
+  const searchParams = useSearchParams()
+  const search = searchParams.get('search')
+
+  // Este log não será exibido no servidor durante a renderização estática
+  console.log(search)
+
+  return <>Search: {search}</>
+}
+```
+
+```tsx
+import { Suspense } from 'react'
+import SearchBar from './search-bar'
+
+// Este componente será renderizado como um placeholder para a barra de pesquisa no HTML inicial.
+// Quando o valor estiver disponível durante a hidratação do React, o fallback
+// será substituído pelo componente `<SearchBar>`.
+function SearchBarFallback() {
+  return <>placeholder</>
+}
+
+export default function Page() {
+  return (
+    <>
+      <nav>
+        <Suspense fallback={<SearchBarFallback />}>
+          <SearchBar />
+        </Suspense>
+      </nav>
+      <h1>Dashboard</h1>
+    </>
+  )
+}
+```
+
+Adotando essa abordagem, você consegue manter parte da sua página sendo renderizada estaticamente, enquanto manipula os parâmetros de pesquisa de maneira eficaz no lado do cliente.

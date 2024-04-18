@@ -21,6 +21,7 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {/* <Button>{message}</Button> */}
+      <h1 className="text-primary">teste</h1>
       {/* <GithubProfile /> */}
     </main>
   )
