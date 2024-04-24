@@ -21,17 +21,13 @@ export function CartProvider({ children }: { children: ReactNode }) {
     setCartItems(state => {
       const productInCart = state.some(item => item.productId === productId)
 
-      if (productInCart) {
-        return state.map(item => {
-          if (item.productId === productId) {
-            return { ...item, quantity: item.quantity + 1 }
-          } else {
-            return item
-          }
-        })
-      } else {
-        return [...state, { productId, quantity: 1 }]
-      }
+      return productInCart
+        ? state.map(item => {
+            return item.productId === productId
+              ? { ...item, quantity: item.quantity + 1 }
+              : item
+          })
+        : [...state, { productId, quantity: 1 }]
     })
   }
 
