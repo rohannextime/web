@@ -30,12 +30,12 @@ runs:
         restore-keys: |
           ${{ runner.os }}-node-modules-
 
-    - name: Install pnpm 
+    - name: Install pnpm
       if: ${{ inputs.install == 'true' }}
       shell: bash
       run: |
         npm install -g pnpm
-        pnpm install --frozen-lockfile
+        pnpm install
         pnpm clean:cache
 
     - name: Save node_modules cache
