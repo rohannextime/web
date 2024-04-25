@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { CookieBanner } from '../../components/CookieBanner'
 import { Header } from '@/components/Header'
 
 export default function PortalLayout({
@@ -11,6 +12,7 @@ export default function PortalLayout({
     <div>
       <Header />
       {children}
+      <CookieBanner />
     </div>
   )
 }
