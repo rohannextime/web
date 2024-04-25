@@ -8,7 +8,7 @@ import { Metadata } from 'next'
 // import { HomeProps } from '@/data/types/home'
 
 export const metadata: Metadata = {
-  title: 'Home'
+  title: 'Home Edoras'
 }
 
 // async function getHomeData(): Promise<HomeProps> {
@@ -36,9 +36,9 @@ export default async function Home() {
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
           <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
         </svg>
@@ -57,9 +57,9 @@ export default async function Home() {
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
           <circle cx="12" cy="12" r="4"></circle>
           <path d="M12 2v2"></path>
