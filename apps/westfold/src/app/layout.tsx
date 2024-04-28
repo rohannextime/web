@@ -2,6 +2,8 @@ import React from 'react'
 
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+
+import PrelineScript from '../components/PrelineScript'
 import './global.css'
 import '@rohan/ui/dist/index.css'
 
@@ -25,7 +27,10 @@ export default function RootLayout({
 }) {
   return (
     <html className={inter.variable} lang="pt-BR">
-      <body>{children}</body>
+      <body>
+        {children}
+        <PrelineScript />
+      </body>
     </html>
   )
 }
