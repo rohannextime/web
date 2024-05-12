@@ -56,6 +56,7 @@
     "depcheck": "depcheck"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
     "@next/font": "^14.2.3",
     "@nextime-ui/icons": "^2.7.2",
     "@nextime-ui/react": "^2.7.2",
@@ -63,12 +64,19 @@
     "@nextime-ui/tokens": "^2.7.2",
     "@preline/theme-switch": "^2.1.0",
     "@t3-oss/env-nextjs": "^0.10.1",
+    "@radix-ui/react-collapsible": "1.0.3",
+    "@radix-ui/react-scroll-area": "1.0.5",
+    "@radix-ui/react-select": "2.0.0",
+    "@radix-ui/react-slot": "1.0.2",
+    "@radix-ui/react-tabs": "1.0.4",
+    "framer-motion": "11.1.9",
     "lucide-react": "^0.378.0",
     "next": "^14.2.3",
     "preline": "^2.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tailwind-merge": "^2.3.0",
+    "tailwind-variants": "0.2.1",
     "zod": "^3.23.8",
     "zustand": "^4.5.2"
   },

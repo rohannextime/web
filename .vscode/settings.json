@@ -20,7 +20,7 @@
     "apps/*/.cache": true,
     "apps/*/build": true
   },
-  "cSpell.words": [],
+  "cSpell.words": ["unsplash"],
   "git.ignoreLimitWarning": true,
   "js/ts.implicitProjectConfig.checkJs": true,
   "javascript.validate.enable": false,

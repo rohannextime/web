@@ -47,6 +47,13 @@ Para futuras funcionalidades que exigem um editor de texto no aplicativo Rohan, 
 
 Para mais detalhes sobre o TiPTaP, visite a [documentação oficial](https://tiptap.dev/docs/editor/installation/nextjs).
 
+### Animações
+
+Se for necessário implementar animações no aplicativo Rohan, recomendamos utilizar uma das seguintes ferramentas:
+
+- **Framer Motion:** Uma biblioteca poderosa para animações no React. Saiba mais e veja exemplos em [Framer Motion](https://www.framer.com/motion/).
+- **Auto Animate:** Uma ferramenta que facilita a adição de animações automáticas com poucos ajustes de código. Confira mais detalhes em [Auto Animate](https://auto-animate.formkit.com/).
+
 ## ❓ FAQ
 
 ## 🖥️ Client-Side Rendering em Páginas Estáticas com `useSearchParams`
