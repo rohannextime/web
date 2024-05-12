@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 
 // import GithubProfile from '@/components/GithubProfile'
 
@@ -287,7 +288,7 @@ export default async function Home() {
           {/* <!-- End Col --> */}
 
           <div className="relative ms-4">
-            <img
+            <Image
               className="w-full rounded-md"
               src="https://images.unsplash.com/photo-1665686377065-08ba896d16fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&h=800&q=80"
               alt="Image Description"
