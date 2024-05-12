@@ -29,8 +29,6 @@
     "start": "turbo run start",
     "typecheck": "turbo run typecheck --parallel",
     "update": "pnpm update --latest",
-    "dunharrow:build": "turbo run build --filter dunharrow",
-    "dunharrow:dev": "turbo run dev --filter dunharrow",
     "edoras:build": "turbo run build --filter edoras",
     "edoras:dev": "turbo run dev --filter edoras",
     "edoras:e2e": "turbo run e2e --filter edoras",
