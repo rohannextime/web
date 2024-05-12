@@ -5,3 +5,4 @@ dist
 .turbo
 apps/*/.next/
 styled-system/*
+next-env.d.ts

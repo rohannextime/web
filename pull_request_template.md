@@ -8,9 +8,9 @@ _Como essa mudança resolve o problema?_
 
 ### Tarefas
 
-- [ ] Utilize o checklist para melhorar a visualização das tarefas e indicar o andamento
-- [ ] Desenvolver testes automatizados
-- [ ] Documentar
+- [] Utilize o checklist para melhorar a visualização das tarefas e indicar o andamento
+- [] Desenvolver testes automatizados
+- [] Documentar
 
 ### Dependências
 
@@ -28,18 +28,18 @@ _Depois:_
 _Caso haja algum aprendizado interessante, compartilhe com a equipe_
 _EX.: Posts em blogs, bibliotecas utilizadas, add-ons utilizados, etc_
 
-## Todo o conteúdo, de uma vez só!
+## Todo o conteúdo, de uma vez só
 
 copilot:all
 
-## Um resumo de um parágrafo das alterações na solicitação de pull.
+## Um resumo de um parágrafo das alterações na solicitação de pull
 
 copilot:summary
 
-## Uma lista detalhada de alterações, incluindo links para as partes relevantes do código..
+## Uma lista detalhada de alterações, incluindo links para as partes relevantes do código
 
 copilot:walkthrough
 
-## Um poema sobre as alterações na solicitação de pull.
+## Um poema sobre as alterações na solicitação de pull
 
 copilot:poem

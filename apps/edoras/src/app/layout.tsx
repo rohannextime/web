@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html className={inter.variable} lang="pt-BR">
       <body className="bg-white dark:bg-slate-800">
-        {children}
+        <div className="relative min-h-screen">{children}</div>
         <PrelineScript />
       </body>
     </html>
