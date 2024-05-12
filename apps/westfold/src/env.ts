@@ -8,14 +8,14 @@ export const env = createEnv({
 
   client: {
     NEXT_PUBLIC_BASE_URL: z.string().url(),
-    NEXT_PUBLIC_API_BASE_URL: z.string().url(),
+    NEXT_PUBLIC_API_URL: z.string().url(),
     NEXT_PUBLIC_HYGRAPH_ENDPOINT: z.string().url()
   },
 
   runtimeEnv: {
     BASE_URL: process.env.BASE_URL,
     NEXT_PUBLIC_BASE_URL: process.env.NEXT_PUBLIC_BASE_URL,
-    NEXT_PUBLIC_API_BASE_URL: process.env.NEXT_PUBLIC_API_BASE_URL,
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
     NEXT_PUBLIC_HYGRAPH_ENDPOINT: process.env.NEXT_PUBLIC_HYGRAPH_ENDPOINT
   }
 })

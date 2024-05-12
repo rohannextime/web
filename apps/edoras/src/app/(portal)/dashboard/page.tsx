@@ -1,3 +1,4 @@
+import { ThemeSelector } from '../../../components/ThemeSelector'
 import { Button } from '@/components/Button'
 import * as FileInput from '@/components/Form/FileInput'
 import * as Input from '@/components/Form/Input'
@@ -12,6 +13,7 @@ import { SettingsTabs } from './SettingsTabs'
 export default function Dashboard() {
   return (
     <>
+      <ThemeSelector />
       <h1 className="text-3xl font-medium text-zinc-900 dark:text-zinc-100">
         Settings
       </h1>
@@ -37,7 +39,6 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
-
       <form
         id="settings"
         className="mt-6 flex w-full flex-col gap-5 divide-y divide-zinc-200 dark:divide-zinc-800"
